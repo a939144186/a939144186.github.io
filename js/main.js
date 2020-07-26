@@ -205,20 +205,20 @@ function btnChange(index,flag,speed){
             nav_ul[0].style.color = 'red';
             divMove(wrapBox,0,20*speed);
         }
-        else if(index >0 && index <=3){
+        else if(index >0 && index <=6){
             f_btn[index].style.background = "#ffffff"; 
             //wrapBox.style.top = (-height * indexs) +"px";
             nav_ul[index].style.color = 'red';
             divMove(wrapBox,-(height * indexs),20*speed);
         }
-        else if(index == 4){
-            indexs = 4;
+        else if(index == 7){
+            indexs = 7;
             //wrapBox.style.top = (-height * 3 - fh) +"px";
             divMove(wrapBox,(-height * 3 - fh),20*speed);
             nav_ul[index].style.color = 'red';
         }
         else{
-            indexs = 4;
+            indexs = 7;
         }
     }
     else{
@@ -228,18 +228,18 @@ function btnChange(index,flag,speed){
             nav_ul[0].style.color = 'red';
             wrapBox.style.top = "0";
         }
-        else if(index >0 && index <=3){
+        else if(index >0 && index <=6){
             f_btn[index].style.background = "#ffffff"; 
             nav_ul[index].style.color = 'red';
             wrapBox.style.top = (-height * indexs) +"px";
         }
-        else if(index == 4){
-            indexs = 4;
+        else if(index == 7){
+            indexs = 7;
             wrapBox.style.top = (-height * 3 - fh) +"px";
             nav_ul[index].style.color = 'red';
         }
         else{
-            indexs = 4;
+            indexs = 7;
         }  
     }
     if(indexs == 1 && !box02_flag){
