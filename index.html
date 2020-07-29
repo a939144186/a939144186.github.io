@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>random</title>
+ <style>
+  #awardListDom{width: 100%;}
+ </style>
+</head>
+<body>
+ <label for="awardListDom">奖项列表</label><br>
+ <input type="text" value="" id="awardListDom"> <br>
+ <label for="num">抽到的奖</label><br>
+ <input type="text" value="" id="num"> <br>
+ <button id="submit">开始抽奖</button>
+ <script>
+  /* 
+  * 思路：随机抽奖，抽一个奖项便减少一个
+  * Math 对象方法：http://www.w3school.com.cn/jsref/jsref_obj_math.asp
+  *  -random():返回 0 ~ 1 之间的随机数。
+  *  -floor():获取整数
+  * 数组操作：
+  *  - splice(x,y); x:起始位置， y:获取并删除个数
+  */
+ 
+  function random(min,max){
+    return Math.floor(min+Math.random()*(max-min));
+  }
+  var awardListDom=document.getElementById("awardListDom"),
+  num=document.getElementById("num"),
+  submit=document.getElementById("submit");
+  var awardList=["一等奖","二等奖","二等奖","三等奖","三等奖","三等奖","鼓励奖","鼓励奖","鼓励奖","鼓励奖","谢谢参与","谢谢参与","谢谢参与","谢谢参与","谢谢参与","谢谢参与"];
+ 
+  awardListDom.value=awardList;
+  submit.onclick=function(){
+   //引用数组
+   var oldArray=awardList;
+   var rNum=random(0,oldArray.length);
+    
+   if(oldArray.length<1){
+    awardListDom.value="活动结束";
+    num.value="活动结束";
+   }
+   else{
+    num.value=oldArray[rNum];
+    oldArray.splice(rNum,1);
+    awardListDom.value=oldArray;
+   }
+  }
+ </script>
+</body>
+</html>
