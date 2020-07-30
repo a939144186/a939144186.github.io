@@ -113,7 +113,7 @@ window.onload = function() {
 		  var awardListDom=document.getElementById("awardListDom"),
 		  num=document.getElementById("num"),
 		  submit=document.getElementById("submit");
-		  var awardList=["优惠券1","优惠券2","优惠券3","优惠券4"];
+		  var awardList=["优惠券1","没中奖，再试一次","优惠券3","优惠券4"];
 		 
 		  awardListDom.value=awardList;
 		  submit.onclick=function(){
@@ -121,7 +121,7 @@ window.onload = function() {
 		   var oldArray=awardList;
 		   var rNum=random(0,oldArray.length);
 		   if(submit.value == "点击领取"){
-			   if(num.value == "优惠券2")
+			   if(num.value == "没中奖，再试一次")
 			   window.location.href = "index.html"
 			   if(num.value == "优惠券1")
 			   window.location.href = "https://v03.jz0351.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=sale.coupon.detail&id=4"
