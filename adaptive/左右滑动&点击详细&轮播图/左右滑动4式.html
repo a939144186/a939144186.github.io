@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<!-- <meta content="yes" name="apple-mobile-web-app-capable" /> -->
+		<!-- <meta content="black" name="apple-mobile-web-app-status-bar-style" /> -->
+		<!-- <meta content="telephone=no" name="format-detection" /> -->
+		<title>左右滑动4式</title>
+		<link href="css/style.css?v2" rel="stylesheet">
+	</head>
+	<body>
+		<div id="header">
+			<!--.top
+      .container
+        ul.btn-groups.pull-right
+          li: a.btn-top(href="#") 在线订货 
+            i.fa.fa-pencil-square-o
+          li.drop
+            a.btn-top.lg(href="#") CH
+            ul.dropm
+              li
+                a.btn-top.lg(href="#") EN
+        .search.pull-right
+          input(type="text" placeholder="SEARCH")
+          button(type="submit")
+            i.fa.fa-search
+      -->
+			<nav role="navigation" class="navbar navbar-style">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" data-toggle="collapse" data-target="#mb-navbar" class="navbar-toggle"><span class="sr-only">Toggle
+								navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+						<!-- <a href="/" class="navbar-brand"><img src="images/55373f35248d.png" ></a> -->
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div id="banner" style="background-image: url('images/54d4873f63781.jpg')" class="spch">
+		</div>
+		<div class="sub-main">
+			<div class="container">
+				<div class="heading01">
+					<div class="line"></div>
+					<h2><span class="en gr">CV NEWS</span><span class="ch">内容<b class="red">动态</b></span></h2>
+				</div>
+				<div class="sub005">
+					<div class="sub-news-contain">
+						<div class="sub-news-slider">
+							<div class="co clearfix">
+								<div class="img zoom"><a href="javascript:;"><img src="images/56dff404b7d16.jpg"></a></div>
+								<div class="box-sub-news">
+									<div class="bl"></div>
+									<div class="bm clearfix">
+										<h2>notice宣布：第一条新的通知</h2>
+										<div class="desc">
+											<p> 导语：宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容 </p>
+										</div>
+										<a href="javascript:;" class="more">MORE</a>
+									</div>
+								</div>
+							</div>
+							<div class="co clearfix">
+								<div class="img zoom"><a href="javascript:;"><img src="images/56dff404b7d16.jpg"></a></div>
+								<div class="box-sub-news">
+									<div class="bl"></div>
+									<div class="bm clearfix">
+										<h2>notice宣布：第二条新的通知</h2>
+										<div class="desc">
+											<p> 导语：宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容宣传内容 </p>
+										</div>
+										<a href="javascript:;" class="more">MORE</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer01">
+
+			</div>
+			<div class="footer02">
+				<div class="container clearfix">
+					<div class="copyright pull-left"><span>copyright © 2016 </span><span>阿萨德 </span><span>123号
+						</span></div>
+					<div class="powered pull-right"><a href="javascript:;">Powered by 123</a></div>
+				</div>
+			</div>
+			<div class="imgModal"></div>
+			<script src="script/jquery-1.11.2.min.js"></script>
+			<script src="script/main-script.min.js"></script>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('.sub-news-slider').bxSlider({
+					pager: false,
+					infiniteLoop: false,
+					responsive: true,
+					nextText: '<i class="fa fa-angle-right"></i>',
+					prevText: '<i class="fa fa-angle-left"></i>',
+				});
+			});
+		</script>
+	</body>
+</html>
